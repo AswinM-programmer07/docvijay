@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RFM Calculation Project Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            color: #009688;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #009688;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* Main Content */
+        .content {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .section code {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #009688;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>RFM Calculation for Customer Segmentation</h1>
+        <p>Powered by Django API, React, and Firebase</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <!-- Introduction Section -->
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>This project calculates RFM (Recency, Frequency, Monetary) values for customers and uses these insights to recommend personalized plans or offers. The system is built using:</p>
+            <ul>
+                <li><strong>Django</strong> for the backend API.</li>
+                <li><strong>React</strong> for the frontend user interface.</li>
+                <li><strong>Firebase</strong> for storing and managing customer data.</li>
+            </ul>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <ul>
+                <li>Calculates RFM values for customers based on their activity and spending.</li>
+                <li>Stores and manages customer data in Firebase (Firestore).</li>
+                <li>Recommends personalized plans and offers based on RFM segmentation.</li>
+                <li>Provides a user-friendly interface using React.</li>
+                <li>Flexible and scalable backend using Django API.</li>
+            </ul>
+        </section>
+
+        <!-- Setup Section -->
+        <section id="setup" class="section">
+            <h2>Setup</h2>
+            <p>Before you start, you will need the following tools and software:</p>
+            <ul>
+                <li><strong>Python 3.x</strong> for the Django backend.</li>
+                <li><strong>Node.js</strong> for the React frontend.</li>
+                <li><strong>Firebase account</strong> to store customer data and interact with Firestore.</li>
+            </ul>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="section">
+            <h2>Installation</h2>
+            <p>Follow these steps to set up the project on your local machine:</p>
+            <ol>
+                <li>Clone the repository from GitHub:</li>
+                <pre><code>git clone https://github.com/yourusername/rfm-calculation-project.git</code></pre>
+                <li>Install Django and required Python dependencies:</li>
+                <pre><code>cd rfm-calculation-project/backend
+pip install -r requirements.txt</code></pre>
+                <li>Set up Firebase and configure it with your Django backend (refer to Firebase documentation for details on setting up Firestore).</li>
+                <li>Install frontend dependencies using npm:</li>
+                <pre><code>cd ../frontend
+npm install</code></pre>
+                <li>Start the backend Django server:</li>
+                <pre><code>python manage.py runserver</code></pre>
+                <li>Start the React development server:</li>
+                <pre><code>npm start</code></pre>
+            </ol>
+        </section>
+
+        <!-- Usage Section -->
+        <section id="usage" class="section">
+            <h2>Usage</h2>
+            <p>Once the installation is complete, you can start using the system:</p>
+            <ul>
+                <li>Enter customer information such as Name, Phone Number, Cost, and the Date of the last purchase.</li>
+                <li>The system will calculate the RFM values for the customer based on the provided data.</li>
+                <li>Based on the RFM values, personalized plans or offers will be suggested to the customer.</li>
+                <li>View RFM data on the frontend dashboard to analyze customer segmentation.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RFM Calculation Project | Developed by YourName</p>
+        <p><a href="https://github.com/yourusername/rfm-calculation-project" target="_blank">GitHub Repository</a></p>
+    </footer>
+
+</body>
+
+</html>
